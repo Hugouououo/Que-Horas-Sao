@@ -1,0 +1,41 @@
+<!--Verificador de idade: homem adulto, mulher jovem, mullher idosa e ETC-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="ex015.css"> <!--Cópia do ex014.css-->
+    <script src="ex015.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Verficar sua Idade</h1>
+    </header>
+    	
+    <section>
+        <div>
+            <p> Ano de nascimento:
+                <input type="number" id="txtano"> <!--Caixa de texto-->
+            </p>
+            <p> Sexo:
+                <input type="radio" name="sex" id="masc" checked> <!--Já carrega checkado-->
+                <label for="masc">Masculino</label>
+                                                    <!--Name: n deixa as duas bolinhas ficarem ativas juntas    -->
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label> <!--Label faz mostrar um texto após a bolinha-->
+
+                <p><input type="button" value="Verficar" onclick="verificar()"></p>
+            </p>
+        </div>
+        <div id="res">
+            <em>Preencha os dados acima para ver o resultado!</em> <!--Itálico-->
+        </div>
+
+    </section>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
